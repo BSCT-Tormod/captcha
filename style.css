@@ -1,0 +1,193 @@
+html{
+    font-family: "Trebuchet MS";
+    overflow: hidden;
+}
+
+header{
+    background-color: #1A73E8;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+}
+header h1{
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    vertical-align: middle;
+    letter-spacing: .3em;
+}
+
+.game-container{
+    position: absolute;
+    top: 10%;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    background-color: #272727;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.start{
+    width: 45%;
+    height: 15%;
+    display: flex;
+    margin: auto;
+}
+
+/* Toggle switch*/
+
+.switch {
+    margin: auto;
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #272727;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #7bbef5;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #7bbef5;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+/* Fin toggle switch */
+
+
+
+/* Boutton */
+.button-19 {
+  appearance: button;
+  background-color: #00449c;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 0;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 2em;
+  font-weight: 900;
+  letter-spacing: .2em;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 30px 16px;
+  text-align: center;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+  transition: all 0.2s ease-out;
+}
+
+.button-19:after {
+  background-clip: padding-box;
+  background-color: #1A73E8;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.button-19:main,
+.button-19:focus {
+  user-select: auto;
+}
+
+.button-19:hover {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+  border-width: 0 0 8px;
+  /* letter-spacing: .05em; */
+  font-size: 2.5em;
+  /* transform: translateY(-5px); */
+  animation: shaking 0.75s infinite;
+}
+
+.button-19:active {
+    transform: translateY(10px);
+    border-width: 4px 0 0;
+    letter-spacing: .01em;
+    font-size: 2.5em;
+    animation: shaking 0.15s infinite;
+  }
+
+.button-19:disabled {
+  cursor: auto;
+}
+
+@keyframes shaking {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(2px, 2px) rotate(2deg); }
+    50% { transform: translate(0, 0) rotate(0eg); }
+    75% { transform: translate(-2px, 2px) rotate(-2deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+  }
